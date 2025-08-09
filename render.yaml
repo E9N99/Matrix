@@ -1,5 +1,5 @@
 databases:
-  - name: BiLaL
+  - name: BiLaL1
     ipAllowList: []
     region: frankfurt
     plan: free
