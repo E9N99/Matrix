@@ -11,17 +11,17 @@ def run(cmd):
     subprocess.run(cmd, shell=True, check=True)
 
 def _run_git_clone():
-    print("• جـاري تحميل سورس تيبثـون.....")
+    print("• جـاري تحميل سورس ماتركـس.....")
     repo_matrix = base64.b64decode(Matrix.replace(" ", "")).decode()
     run(f"git clone -b {BiLaL} {repo_matrix} source_temp")
     os.chdir("source_temp")
 
 def _install_requirements():
-    print("⌭ تثبيت مكاتب تيبثون ⌭")
+    print("⌭ تثبيت مكاتب ماتركـس ⌭")
     run("pip install -r requirements.txt")
 
 def _start_project():
-    print("⌭ البدء بتشغيل تيبثون ⌭")
+    print("⌭ البدء بتشغيل ماتركـس ⌭")
     
     run("python3 server.py &")
     run("python3 -m zelz")
