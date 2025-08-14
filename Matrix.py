@@ -5,7 +5,7 @@ import base64
 
 Matrix = "aHR0cHM6Ly9naXRodWIuY29tL0U5Tjk5L2F5YS5naXQ="
 
-افتراضية
+
 BiLaL = os.getenv("MATRIX_BRANCH", "main")
 
 def run(cmd):
