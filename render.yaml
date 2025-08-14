@@ -3,6 +3,7 @@ databases:
     ipAllowList: []
     region: frankfurt
     plan: free
+
 services:
   - type: web
     plan: free
@@ -32,4 +33,6 @@ services:
         fromDatabase:
           name: V1
           property: connectionString
+      - key: MATRIX_BRANCH
+        value: main   
     autoDeploy: false
